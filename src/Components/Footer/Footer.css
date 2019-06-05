@@ -1,0 +1,62 @@
+.Footer {
+    font-size: 1.4rem;
+}
+
+.Top {
+    color: #383031;
+    background-color: #ebebeb;
+    padding: 10rem 5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Left>* {
+    padding: 0.2rem 0;
+}
+
+.Title {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+}
+
+.Right p {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.Right ul {
+    list-style: none;
+}
+
+.Right li {
+    padding: 0.5rem 0;
+    font-size: 1.4rem;
+}
+
+.Right li a {
+    color: #22888b;
+    transition: all 300ms ease;
+}
+
+.Right li a:hover {
+    color: #68c7c6;
+}
+
+.Bottom {
+    text-align: right;
+    background-color: #383031;
+    color: #22888b;
+}
+
+.Bottom p {
+    padding: 2rem;
+}
+
+.Bottom p a {
+    color: #68c7c6;
+    transition: all 300ms ease;
+}
+
+.Bottom p a:hover {
+    color: #f3de58;
+}
