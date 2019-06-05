@@ -1,0 +1,10 @@
+.Connect {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient( to right top, rgba(243, 243, 243, 0.801), rgba(243, 243, 243, 0.801)), url("../../assets/images/family-coaching-solutions.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}

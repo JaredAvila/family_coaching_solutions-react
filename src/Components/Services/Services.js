@@ -34,20 +34,13 @@ const Services = () => {
       <div className={classes.Cards}>
         {cards.map(card => (
           <Card
+            key={card.title}
             title={card.title}
             icon={card.icon}
             paragraph={card.paragraph}
           />
         ))}
       </div>
-      {/* <div class="about__schedule">
-        <h2 class="about__sched">
-          Schedule your FREE twenty minute phone session today!
-        </h2>
-        <a href="#" class="about__btn">
-          Contact <span class="about__btn--arrow">&RightArrow;</span>
-        </a>
-      </div> */}
     </section>
   );
 };

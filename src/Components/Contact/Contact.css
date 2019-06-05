@@ -1,0 +1,71 @@
+.Contact {
+    background-color: #383836;
+}
+
+.Form {
+    position: relative;
+    display: flex;
+    color: #ebebeb;
+    flex-direction: column;
+    padding: 15rem 5rem 10rem 5rem;
+    font-size: 1.6rem;
+}
+
+.Title {
+    position: absolute;
+    font-size: 3.6rem;
+    color: #22888b;
+    text-shadow: 0.2rem 0.2rem 2rem black;
+    top: 6rem;
+    left: 10rem;
+}
+
+.Input, .Form textarea {
+    margin-bottom: 2.5rem;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    font-size: 1.4rem;
+    background-color: transparent;
+    border-bottom: 1px solid #ebebeb;
+    color: #68c7c6;
+}
+
+.Input:placeholder-shown+label, .Textarea:placeholder-shown+label {
+    opacity: 1;
+    visibility: hidden;
+    transform: translateX(-10rem);
+}
+
+.Input::-webkit-input-placeholder, .Textarea::-webkit-input-placeholder {
+    color: #ebebeb;
+}
+
+.Input_field {
+    display: flex;
+}
+
+.Label {
+    transition: all 300ms ease;
+    color: #f3de58;
+}
+
+.Input_field i {
+    padding-right: 2rem;
+    color: #68c7c6;
+}
+
+.Button {
+    padding: 0.7rem;
+    position: relative;
+    border: none;
+    box-shadow: 0 0.3rem 0.6rem rgb(17, 17, 17);
+    background-color: #f3de58;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    outline: none;
+    transition: all 300ms ease;
+}

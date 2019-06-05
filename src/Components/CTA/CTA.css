@@ -1,0 +1,51 @@
+.CTA {
+    position: relative;
+    color: #ebebeb;
+    background-color: #22888b;
+    padding: 8rem;
+}
+
+.Schedule {
+    width: 100%;
+    padding: 9rem 15rem 20rem 15rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.6rem;
+}
+
+.Button {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem 5rem 1rem 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 2rem;
+    background-color: #f3de58;
+    color: #383031;
+    box-shadow: 0 0.2rem 0.5rem rgb(102, 102, 102);
+    transition: all 300ms ease;
+}
+
+.Button:hover {
+    transform: translateX(-50%) translateY(-0.5rem);
+    box-shadow: 0 0.5rem 0.7rem rgb(65, 65, 65);
+}
+
+.Arrow {
+    position: absolute;
+    top: 0.8rem;
+    right: 2rem;
+    transition: all 300ms ease;
+}
+
+.Button:hover .Arrow {
+    transform: translateX(1rem);
+}
+
+.Button:active {
+    transform: translateY(0);
+    box-shadow: 0 0.2rem 0.2rem rgb(102, 102, 102);
+}

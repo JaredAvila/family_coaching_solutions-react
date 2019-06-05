@@ -2,7 +2,7 @@ import React from "react";
 
 import Services from "../../Components/Services/Services";
 import CTA from "../../Components/CTA/CTA";
-import Contact from "../../Components/Contact/Contact";
+import Connect from "../../Components/Connect/Connect";
 import Landing from "../../Components/Landing/Landing";
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
       <Landing />
       <Services />
       <CTA />
-      <Contact />
+      <Connect />
     </div>
   );
 };
