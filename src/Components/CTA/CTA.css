@@ -46,6 +46,6 @@
 }
 
 .Button:active {
-    transform: translateY(0);
+    transform: translateY(0) translateX(-50%);
     box-shadow: 0 0.2rem 0.2rem rgb(102, 102, 102);
 }

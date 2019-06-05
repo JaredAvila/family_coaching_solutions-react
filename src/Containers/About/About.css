@@ -1,0 +1,36 @@
+.About {
+    background-image: linear-gradient(rgba(104, 199, 198, 0.3), rgba(56, 56, 54, 1) 90%), url("../../assets/images/aboutBack.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+}
+
+.Title {
+    position: absolute;
+    color: #ebebeb;
+    font-weight: 400;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5rem;
+    letter-spacing: .3rem;
+}
+
+.NameTag {
+    position: absolute;
+    top: 65%;
+    left: 15%;
+}
+
+.Name {
+    color: rgba(104, 199, 198);
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.Sub {
+    color: #f3de58;
+    margin-left: 5rem;
+    font-size: 1.8rem;
+}

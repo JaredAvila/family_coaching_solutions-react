@@ -13,10 +13,10 @@ const Services = () => {
         "I can assist you in bringing out the best YOU... through compassion, awareness, encouragement and support. If you're going through rough times, you need to understand how it affects your children. There are ways to handle this while keeping your children's best interests at heart. I can help you develop a Co-Parenting Plan that will work for you."
     },
     {
-      title: "Parenting Classes",
-      icon: "school",
+      title: "Parenting Clashes",
+      icon: "offline_bolt",
       paragraph:
-        'I teach a parenting class using the Foundation of Family Values "Conscious Parenting" curriculum. Become a more effective, involved and loving parent today!'
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam amet dolorem officiis ea pariatur. Asperiores delectus quae maxime excepturi id eius sed quidem, consequuntur tempore ipsum cum deleniti mollitia quo quas modi quibusdam ipsam voluptates. Aspernatur molestiae laudantium vitae repellendus, rem est et, ipsam suscipit accusantium numquam unde nostrum dolores."
     },
     {
       title: "Mentoring",
