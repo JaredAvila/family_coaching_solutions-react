@@ -1,9 +1,10 @@
 import React from "react";
+import logo from "../../assets/images/Logo.png";
 
 const Logo = () => {
   return (
     <div>
-      <p>Logo comming soon...</p>
+      <img src={logo} alt="Family Coaching Solutions" />
     </div>
   );
 };

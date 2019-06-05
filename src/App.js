@@ -3,7 +3,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 
 import Layout from "./Layout/Layout";
 import About from "./Containers/About/About";
-import Landing from "./Containers/Landing/Landing";
+import Home from "./Containers/Home/Home";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Layout>
         <Switch>
           <Route path="/about" component={About} />
-          <Route path="/" exact component={Landing} />
+          <Route path="/" exact component={Home} />
           <Redirect to="/" />
         </Switch>
       </Layout>
