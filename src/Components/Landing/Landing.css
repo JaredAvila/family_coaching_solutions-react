@@ -1,0 +1,32 @@
+.Header {
+    position: relative;
+    background-color: #383031;
+}
+
+.Landing {
+    height: 100vh;
+    width: 100%;
+    -webkit-clip-path: polygon(70% 0, 100% 0, 100% 100%, 28% 100%);
+    clip-path: polygon(70% 0, 100% 0, 100% 100%, 28% 100%);
+    background-image: linear-gradient( to bottom, rgba(48, 48, 48, 0.4), rgba(48, 48, 48, 0.4)), url("../../assets/images/back.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.Showcase {
+    position: absolute;
+    opacity: 1;
+    top: 50%;
+    left: 20%;
+}
+
+.Main {
+    font-size: 7rem;
+    font-weight: 400;
+    color: #68c7c6;
+}
+
+.Sub {
+    font-size: 3rem;
+    color: #f3de58;
+}
