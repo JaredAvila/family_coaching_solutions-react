@@ -8,8 +8,8 @@ const Connect = () => {
   return (
     <section className={classes.Connect} id="contact-section">
       <Contact />
-      <div className="contact__right">
-        <p className="contact__right--para">
+      <div className={classes.Container}>
+        <p className={classes.Para}>
           Family Coaching Solutions is here to help with many types of issues
           that exist within the faimly unit. Let's work together to find
           solutions and allow me to coach you to a more peaceful and balanced

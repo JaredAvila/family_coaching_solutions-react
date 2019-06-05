@@ -1,10 +1,25 @@
 .Connect {
     display: flex;
     justify-content: space-between;
-    background-image: linear-gradient( to right top, rgba(243, 243, 243, 0.801), rgba(243, 243, 243, 0.801)), url("../../assets/images/family-coaching-solutions.jpg");
+    background-image: linear-gradient( to right top, rgba(243, 243, 243, 0.801), rgba(104, 199, 198, 0.801)), url("../../assets/images/family-coaching-solutions.jpg");
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+}
+
+.Container {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 3.3rem;
+    font-weight: bold;
+}
+
+.Para {
+    padding: 4rem 6rem;
+    color: #383836;
+    font-size: 2rem;
 }
