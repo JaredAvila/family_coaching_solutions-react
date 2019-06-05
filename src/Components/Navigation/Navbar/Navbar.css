@@ -1,0 +1,47 @@
+.Navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 1;
+}
+
+.Logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    border-radius: 50%;
+    background-color: #68c7c6;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 300ms ease;
+}
+
+.Logo img {
+    height: 5rem;
+}
+
+.Logo:hover {
+    top: -20rem;
+    left: -20rem;
+    padding: 1.5rem 65rem 65rem 1.5rem;
+    cursor: default;
+    background-color: #22888b;
+    border: 2px solid #ebebeb;
+}
+
+.List {
+    position: absolute;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    list-style: none;
+    transition: all 300ms ease;
+}
+
+.Logo:hover .List {
+    opacity: 1;
+    bottom: 15rem;
+    left: 25rem;
+}
