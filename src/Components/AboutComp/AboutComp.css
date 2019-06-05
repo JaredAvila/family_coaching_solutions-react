@@ -39,11 +39,40 @@
     text-align: right;
 }
 
-.NameList li, .Para {
+.Associations {
+    list-style: none;
+    padding: 1rem;
+}
+
+.NameList li, .Para, .Associations li {
     font-size: 1.8rem;
     padding: 1rem 0;
 }
 
 .Para {
     line-height: 2.6rem;
+}
+
+.Link {
+    color: #22888b;
+}
+
+.Link:hover {
+    color: #68c7c6;
+}
+
+.Associations li span {
+    font-weight: bold;
+}
+
+.BibleVerse {
+    padding: 10rem 1rem 1rem 1rem;
+    color: #f3de58;
+    font-size: 1.8rem;
+}
+
+.Prov {
+    color: #ebebeb;
+    font-size: 1.4rem;
+    text-align: right;
 }

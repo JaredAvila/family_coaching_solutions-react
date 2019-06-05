@@ -18,15 +18,49 @@ const AboutComp = () => {
             <li>That guy</li>
           </ul>
         </div>
-        <div className={nameCardClasses.join(" ")}>
-          <h4 className={classes.NameTitle}>I go by many names...</h4>
-          <ul className={classes.NameList}>
-            <li>Husband</li>
-            <li>Father</li>
-            <li>Grandfather</li>
-            <li>Coach</li>
-            <li>Drummer</li>
-            <li>That guy</li>
+        <div className={classes.Card}>
+          <h4 className={classes.NameTitle}>Past and Present Associations</h4>
+          <ul className={classes.Associations}>
+            <li>
+              <span>American Association of Christian Counselors</span> --Member
+            </li>
+            <li>
+              <span>Christian Coaches Network</span> --Member
+            </li>
+            <li>
+              <span>Pioneer Family Academy</span> --7th Grade Life Science
+              Teacher
+            </li>
+            <li>
+              <span>Santa Clara County Fatherhood Collaborative</span>{" "}
+              --Founding Member
+            </li>
+            <li>
+              <span>Father Matters, Inc.</span> --President
+            </li>
+            <li>
+              <span>Foundation of Family Values</span> --Parent Educator, Member
+            </li>
+            <li>
+              <span>Mercy Hill Church</span> --Worship Team Drummer
+            </li>
+            <li>
+              <span>Santa Clara County Perinatal Network</span> --Member
+            </li>
+            <li>
+              <span>City of San Jose Domestic Violence Task Force</span> --Past
+              Member
+            </li>
+            <li>
+              <span>Adolescent Pregnancy Prevention Network</span> --Past Member
+            </li>
+            <li>
+              <span>San Jose Pacific Pony Baseball League</span> --Past Board
+              Member, Team Manager
+            </li>
+            <li>
+              <span>Cambrian Basketball Association</span> --Former Coach
+            </li>
           </ul>
         </div>
       </div>
@@ -40,10 +74,19 @@ const AboutComp = () => {
             facility ... but I found my passion over ten years ago when I
             started working with men and fathers. I met a man named Vance Simms,
             who really changed my direction in life. He's the Founder of Father
-            Matters (www.fathermatters.org). I became involved, and with Vance
-            and Eric Rosa helped countless men and fathers around the country
-            become more responsible, productive, caring people which directly
-            affected their relationships with loved ones in a very positive way.
+            Matters (
+            <a
+              href="www.fathermatters.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={classes.Link}
+            >
+              www.fathermatters.org
+            </a>
+            ). I became involved, and with Vance and Eric Rosa helped countless
+            men and fathers around the country become more responsible,
+            productive, caring people which directly affected their
+            relationships with loved ones in a very positive way.
             <br />
             <br />
             Now, with the development of Family Coaching Solutions, my desire to
@@ -59,6 +102,11 @@ const AboutComp = () => {
             never looked so bright!
           </p>
         </div>
+        <h3 className={classes.BibleVerse}>
+          "The purpose in a man's heart is like deep water, but a man of
+          understanding will draw it out."
+        </h3>
+        <p className={classes.Prov}>--Proverbs 20:5</p>
       </div>
     </div>
   );
