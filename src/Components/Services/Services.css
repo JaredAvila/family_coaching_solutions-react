@@ -1,0 +1,29 @@
+.Services {
+    padding-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb;
+}
+
+.Heading {
+    font-size: 4rem;
+    font-weight: 200;
+    margin-bottom: 5rem;
+    opacity: 1;
+    color: #383031;
+}
+
+.Spacer {
+    border-bottom: 3px solid #f3de58;
+    width: 10rem;
+    margin-bottom: 10rem;
+    opacity: 1;
+}
+
+.Cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 9rem;
+}
