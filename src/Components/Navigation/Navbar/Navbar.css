@@ -45,3 +45,9 @@
     bottom: 15rem;
     left: 25rem;
 }
+
+@media(max-width: 500px) {
+    .Logo img {
+        height: 3rem;
+    }
+}

@@ -49,3 +49,22 @@
     transform: translateY(0) translateX(-50%);
     box-shadow: 0 0.2rem 0.2rem rgb(102, 102, 102);
 }
+
+@media(max-width: 900px) {
+    .CTA {
+        padding: 4rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .CTA {
+        padding: 3rem 1rem;
+    }
+    .Schedule {
+        padding: 5rem 5rem 20rem 5rem;
+        font-size: 1.8rem;
+    }
+    .Button {
+        font-size: 1.6rem;
+    }
+}

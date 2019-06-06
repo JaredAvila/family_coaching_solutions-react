@@ -1,4 +1,9 @@
 .Logo img {
-    height: 75px;
-    margin: 20px;
+    margin: 1.5rem;
+}
+
+@media(max-width: 500px) {
+    .Logo img {
+        margin: 1rem;
+    }
 }
