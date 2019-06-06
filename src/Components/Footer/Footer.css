@@ -60,3 +60,15 @@
 .Bottom p a:hover {
     color: #f3de58;
 }
+
+@media(max-width: 900px) {
+    .Title {
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .Title {
+        font-size: 2.5rem;
+    }
+}

@@ -86,3 +86,20 @@
     transform: translateY(0.2rem);
     box-shadow: 0 0.1rem 0.3rem rgb(77, 77, 77);
 }
+
+@media(max-width: 500px) {
+    .Title {
+        font-size: 2.6rem;
+        left: 9rem;
+    }
+    .Button {
+        font-size: 1.6rem;
+    }
+    .Button:hover i {
+        right: 4rem;
+    }
+    .Button i {
+        top: 0.4rem;
+        right: 5rem;
+    }
+}

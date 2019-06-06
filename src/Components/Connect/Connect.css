@@ -23,3 +23,16 @@
     color: #383836;
     font-size: 2rem;
 }
+
+@media(max-width: 900px) {
+    .Para {
+        padding: 4rem;
+        font-size: 1.6rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .Connect {
+        flex-flow: column-reverse;
+    }
+}
