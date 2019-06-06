@@ -76,3 +76,22 @@
     font-size: 1.4rem;
     text-align: right;
 }
+
+@media (max-width: 900px) {
+    .Card {
+        padding: 1rem 2rem;
+    }
+    .NameList li, .Para, .Associations li {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .AboutComp {
+        align-items: center;
+        flex-flow: column;
+    }
+    .Left, .Right {
+        width: 90%;
+    }
+}

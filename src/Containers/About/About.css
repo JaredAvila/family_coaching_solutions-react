@@ -34,3 +34,26 @@
     margin-left: 5rem;
     font-size: 1.8rem;
 }
+
+@media(max-width: 900px) {
+    .Title {
+        font-size: 4rem;
+    }
+    .NameTag {
+        top: 50%;
+    }
+}
+
+@media(max-width: 500px) {
+    .Title {
+        left: 45%;
+        font-size: 3rem;
+    }
+    .Name {
+        font-size: 3rem;
+    }
+    .Sub {
+        font-size: 1.4rem;
+        margin-left: 0;
+    }
+}
