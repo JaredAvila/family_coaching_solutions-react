@@ -30,3 +30,18 @@
     font-size: 3rem;
     color: #f3de58;
 }
+
+@media (max-width:900px) {
+    .Main {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .Main {
+        font-size: 4rem;
+    }
+    .Sub {
+        font-size: 2rem;
+    }
+}

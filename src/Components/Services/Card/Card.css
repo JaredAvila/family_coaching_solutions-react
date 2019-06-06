@@ -26,3 +26,30 @@
     font-size: 1.4rem;
     line-height: 2.3rem;
 }
+
+@media (max-width: 900px) {
+    .Card {
+        width: 15rem;
+    }
+    .Para {
+        font-size: 1.2rem;
+        line-height: 2.1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .Card {
+        width: 90%;
+        justify-content: center;
+    }
+    .Card:not(:last-child) {
+        margin-right: 0rem;
+        margin-bottom: 2rem;
+    }
+    .Card i {
+        font-size: 4rem;
+    }
+    .Title {
+        font-size: 1.6rem;
+    }
+}
