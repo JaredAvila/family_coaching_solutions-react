@@ -33,10 +33,14 @@
 
 .Code, .Fees {
     background-color: #ebebeb;
-    padding: 3rem;
+    padding: 3rem 5rem;
     border-radius: 2px;
     width: 40%;
     box-shadow: 0 .2rem .8rem rgba(48, 48, 48, 0.5);
+}
+
+.Fees {
+    height: fit-content;
 }
 
 .List, .Rates {
@@ -58,4 +62,17 @@
     color: #22888b;
     font-size: 1.4rem;
     padding-top: 10rem;
+}
+
+@media(max-width: 500px) {
+    .Title {
+        font-size: 2rem;
+    }
+    .Boxes {
+        flex-wrap: wrap;
+    }
+    .Code, .Fees {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
 }

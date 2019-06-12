@@ -25,3 +25,15 @@
     top: 70%;
     transform: translateY(-70%);
 }
+
+@media(max-width: 500px) {
+    .ServiceLanding {
+        background-position: 25%;
+    }
+    .Main {
+        font-size: 5rem;
+    }
+    .Sub {
+        font-size: 2.5rem;
+    }
+}
