@@ -3,7 +3,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
     padding: 15rem 2rem;
     color: #ebebeb;
     text-align: center;
@@ -23,4 +22,40 @@
 .Boxes {
     display: flex;
     justify-content: space-evenly;
+}
+
+.Boxes h3 {
+    color: #22888b;
+    font-size: 3rem;
+    padding: 1rem 0 3rem 0;
+    border-bottom: 4px double rgb(48, 48, 48);
+}
+
+.Code, .Fees {
+    background-color: #ebebeb;
+    padding: 3rem;
+    border-radius: 2px;
+    width: 40%;
+    box-shadow: 0 .2rem .8rem rgba(48, 48, 48, 0.5);
+}
+
+.List, .Rates {
+    color: rgb(48, 48, 48);
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+.List li {
+    padding: 1rem 0;
+}
+
+.Rates li {
+    padding: 2rem 0;
+    margin-left: 3rem;
+}
+
+.Para {
+    color: #22888b;
+    font-size: 1.4rem;
+    padding-top: 10rem;
 }
