@@ -14,7 +14,7 @@ const Navbar = () => {
           <ul className={classes.List}>
             <NavItem link="/">Home</NavItem>
             <NavItem link="/about">About</NavItem>
-            <NavItem link="/about">Services</NavItem>
+            <NavItem link="/services">Services</NavItem>
             <NavItem link="/about">Blog</NavItem>
             <NavItem link="/about">Contact</NavItem>
           </ul>

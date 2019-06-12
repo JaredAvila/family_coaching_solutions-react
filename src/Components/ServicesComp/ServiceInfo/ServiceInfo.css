@@ -1,0 +1,26 @@
+.ServiceInfo {
+    background-image: linear-gradient(rgba(0, 255, 251, 0.2), rgba(47, 47, 47, .5)), url("../../../assets/images/servicesBack.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 15rem 2rem;
+    color: #ebebeb;
+    text-align: center;
+}
+
+.Title {
+    font-size: 3rem;
+    letter-spacing: .1rem;
+}
+
+.Spacer {
+    border-bottom: solid 3px #f3de58;
+    width: 10rem;
+    margin: 5rem auto;
+}
+
+.Boxes {
+    display: flex;
+    justify-content: space-evenly;
+}

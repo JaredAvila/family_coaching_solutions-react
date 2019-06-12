@@ -1,0 +1,27 @@
+.ServiceLanding {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../../../assets/images/strong_man.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.Main {
+    font-size: 7rem;
+    color: #ebebeb;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    letter-spacing: .3rem;
+}
+
+.Sub {
+    font-size: 3.5rem;
+    color: #68c7c6;
+    position: absolute;
+    left: 25%;
+    top: 70%;
+    transform: translateY(-70%);
+}
