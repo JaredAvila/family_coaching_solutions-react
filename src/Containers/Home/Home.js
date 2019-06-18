@@ -5,9 +5,11 @@ import CTA from "../../Components/CTA/CTA";
 import Connect from "../../Components/Connect/Connect";
 import Landing from "../../Components/Landing/Landing";
 
+import animate from "../../UI/Animations.css";
+
 const Home = () => {
   return (
-    <div>
+    <div className={animate.FadeIn}>
       <Landing />
       <Services />
       <CTA />

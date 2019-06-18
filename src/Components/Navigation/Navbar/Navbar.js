@@ -5,40 +5,53 @@ import NavItem from "./NavItem/NavItem";
 
 import classes from "./Navbar.css";
 import Backdrop from "../../../UI/Backdrop";
+import animate from "../../../UI/Animations.css";
 
 class Navbar extends Component {
   state = {
-    open: false,
-    logoClasses: [classes.Logo],
-    listClasses: [classes.List]
+    open: false
   };
 
   menuOpenedHandler = () => {
     this.setState({
-      open: true,
-      logoClasses: [classes.Logo, classes.Open],
-      listClasses: [classes.List, classes.ListOpen]
+      open: true
     });
   };
   menuClosedHandler = () => {
     this.setState({
-      open: false,
-      logoClasses: [classes.Logo]
+      open: false
+    });
+  };
+
+  toggleMenu = () => {
+    this.setState({
+      open: !this.state.open
     });
   };
 
   render() {
+    let logoClasses = [classes.Logo];
+    let listClasses = [classes.List];
+    let containerClasses = [animate.NavFader, classes.Navbar];
+    if (this.state.open) {
+      logoClasses = [classes.Logo, classes.Open];
+      listClasses = [classes.List, classes.ListOpen];
+    }
     return (
       <header>
         <Backdrop open={this.state.open} click={this.menuClosedHandler} />
-        <nav className={classes.Navbar}>
+        <nav className={containerClasses.join(" ")}>
           <div
             onMouseEnter={this.menuOpenedHandler}
             onMouseLeave={this.menuClosedHandler}
-            className={this.state.logoClasses.join(" ")}
+            onClick={this.toggleMenu}
+            className={logoClasses.join(" ")}
           >
             <Logo />
-            <ul className={this.state.listClasses.join(" ")}>
+            <ul
+              onClick={this.menuClosedHandler}
+              className={listClasses.join(" ")}
+            >
               <NavItem link="/">Home</NavItem>
               <NavItem link="/about">About</NavItem>
               <NavItem link="/services">Services</NavItem>

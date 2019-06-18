@@ -31,15 +31,6 @@
   border: 2px solid #ebebeb;
 }
 
-/* .Logo:hover, .Logo:active {
-    top: -20rem;
-    left: -20rem;
-    padding: 1.5rem 65rem 65rem 1.5rem;
-    cursor: default;
-    background-color: #22888b;
-    border: 2px solid #ebebeb;
-} */
-
 .List {
   position: absolute;
   display: none;
@@ -52,11 +43,6 @@
   left: 25rem;
   display: block;
 }
-/* .Logo:hover .List, .Logo:active .List {
-    bottom: 15rem;
-    left: 25rem;
-    display: block;
-} */
 
 @media (max-width: 500px) {
   .Logo img {

@@ -1,0 +1,81 @@
+.FadeIn {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+.NavFader {
+    opacity: 0;
+    transform: translateY(-20rem);
+    animation: navFader 1.5s ease 1.75s forwards;
+}
+
+.FadeInDown {
+    opacity: 0;
+    transform: translateY(-20rem);
+    animation: fadeInDown 1s ease .7s forwards;
+}
+
+.FadeInLeft {
+    opacity: 0;
+    transform: translateX(-20rem);
+    animation: fadeInLeft 1.5s ease .7s forwards;
+}
+
+.FadeInRight {
+    opacity: 0;
+    transform: translateX(20rem);
+    animation: fadeInRight 1.5s ease .7s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes navFader {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}
