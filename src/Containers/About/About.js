@@ -1,13 +1,14 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 import AboutComp from "../../Components/AboutComp/AboutComp";
 import CTA from "../../Components/CTA/CTA";
 
 import classes from "./About.css";
+import animate from "../../UI/Animations.css";
 
 const About = () => {
   return (
-    <Fragment>
+    <div className={animate.FadeIn}>
       <div className={classes.About}>
         <h1 className={classes.Title}>Who is this guy?</h1>
         <div className={classes.NameTag}>
@@ -19,7 +20,7 @@ const About = () => {
       </div>
       <AboutComp />
       <CTA />
-    </Fragment>
+    </div>
   );
 };
 

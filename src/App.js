@@ -8,7 +8,7 @@ import Services from "./Containers/Services/Services";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundColor: "rgb(48, 48, 48)" }}>
       <Layout>
         <Switch>
           <Route path="/about" component={About} />

@@ -15,6 +15,12 @@
     animation: fadeInDown 1s ease .7s forwards;
 }
 
+.FadeInUp {
+    opacity: 0;
+    transform: translateY(20rem);
+    animation: fadeInUp 1s ease .7s forwards;
+}
+
 .FadeInLeft {
     opacity: 0;
     transform: translateX(-20rem);
@@ -51,6 +57,17 @@
     0% {
         opacity: 0;
         transform: translateY(-20rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
     }
     100% {
         opacity: 1;
