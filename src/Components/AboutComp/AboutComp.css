@@ -16,6 +16,7 @@
     border: 2px solid #22888b;
     height: fit-content;
     margin-bottom: 4rem;
+    opacity: 0;
 }
 
 .Names {
@@ -63,6 +64,10 @@
 
 .Associations li span {
     font-weight: bold;
+}
+
+.Proverb {
+    opacity: 0;
 }
 
 .BibleVerse {
