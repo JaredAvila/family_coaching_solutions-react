@@ -11,6 +11,7 @@
 .Title {
     font-size: 3rem;
     letter-spacing: .1rem;
+    opacity: 0;
 }
 
 .Spacer {
@@ -37,6 +38,8 @@
     border-radius: 2px;
     width: 40%;
     box-shadow: 0 .2rem .8rem rgba(48, 48, 48, 0.5);
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
 }
 
 .Fees {
