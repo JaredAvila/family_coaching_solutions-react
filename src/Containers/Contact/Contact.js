@@ -49,17 +49,28 @@ const Contact = () => {
           </form>
         </div>
         <div className={styles.Right}>
-          <div>
-            <a href="#">facebook</a>
-            <a href="#">linkedin</a>
-            <a href="#">youtube</a>
-            <a href="#">email</a>
+          <div className={styles.Social}>
+            <a href="#">
+              <i class="fab fa-facebook-square" /> facebook
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin" /> linkedin
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube-square" /> youtube
+            </a>
+            <a href="#">
+              <i class="fas fa-envelope" /> email
+            </a>
           </div>
           <hr />
-          <div>
+          <div className={styles.Office}>
             <h4>Office</h4>
-            <p>80 Gilman Ave., Suite 31C</p>
-            <p>Campbell, CA 95008</p>
+            <p>
+              80 Gilman Ave., Suite 31C
+              <br />
+              Campbell, CA 95008
+            </p>
             <h4>Direct Contact</h4>
             <p>Phone: (408) 449-3057</p>
             <p>Email: Jay@FamCoach.com</p>

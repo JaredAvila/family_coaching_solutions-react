@@ -1,4 +1,6 @@
-.Contact {}
+.Contact {
+    color: #383836;
+}
 
 .Header {
     background-image: linear-gradient(rgba(48, 48, 48, 0.6), rgba(48, 48, 48, 0.6)), url("../../assets/images/family_coaching_solutions.jpg");
@@ -40,7 +42,7 @@
 
 .Left, .Right {
     width: 35%;
-    padding: 2rem;
+    padding: 4rem;
 }
 
 .Left h1 {
@@ -53,7 +55,8 @@
     font-size: 1.8rem;
     padding-bottom: 2rem;
     font-weight: 600;
-    color: #22888b;
+    color: #f3de58;
+    text-shadow: 0rem 0rem .3rem #383836;
 }
 
 .Left p {
@@ -79,7 +82,7 @@
 .Left input, .Left textarea, .Left button {
     padding: 1rem;
     border-radius: 4px;
-    border: 1px solid black;
+    border: 1px solid rgba(48, 48, 48, 0.6);
     margin: 0 0 1rem 0;
     outline: none;
     font: inherit;
@@ -101,4 +104,40 @@
 .Right {
     width: 35%;
     border-left: 1px solid rgb(199, 199, 199);
+}
+
+.Social {
+    display: flex;
+    flex-flow: column;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.Social a {
+    text-decoration: none;
+    font: inherit;
+    color: #22888b;
+    padding: 1rem 0;
+    transition: all 250ms ease;
+}
+
+.Social a:hover {
+    color: #68c7c6;
+}
+
+.Office {
+    padding: 4rem 0;
+    color: #383836;
+}
+
+.Office h4 {
+    font-size: 1.8rem;
+    border-bottom: 4px double #383836;
+    margin-bottom: 2rem;
+    width: fit-content;
+}
+
+.Office p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
 }
