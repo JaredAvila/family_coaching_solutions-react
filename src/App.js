@@ -5,6 +5,7 @@ import Layout from "./Layout/Layout";
 import About from "./Containers/About/About";
 import Home from "./Containers/Home/Home";
 import Services from "./Containers/Services/Services";
+import Contact from "./Containers/Contact/Contact";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route path="/about" component={About} />
           <Route path="/services" component={Services} />
+          <Route path="/contact" component={Contact} />
           <Route path="/" exact component={Home} />
           <Redirect to="/" />
         </Switch>

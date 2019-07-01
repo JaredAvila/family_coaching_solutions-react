@@ -56,7 +56,7 @@ class Navbar extends Component {
               <NavItem link="/about">About</NavItem>
               <NavItem link="/services">Services</NavItem>
               <NavItem link="/about">Blog</NavItem>
-              <NavItem link="/about">Contact</NavItem>
+              <NavItem link="/contact">Contact</NavItem>
             </ul>
           </div>
         </nav>
