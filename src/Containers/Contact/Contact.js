@@ -14,7 +14,7 @@ const Contact = () => {
           know your time is valuable and I value you for reaching out.
         </p>
       </div>
-      <div className={styles.Main}>
+      <main className={styles.Main}>
         <div className={styles.Left}>
           <h1>
             Family Coaching Solutions is here to help you gain control of your
@@ -76,6 +76,9 @@ const Contact = () => {
             <p>Email: Jay@FamCoach.com</p>
           </div>
         </div>
+      </main>
+      <div className={styles.End}>
+        <p>Family Coaching Solutions - Build on a foundation of love</p>
       </div>
     </div>
   );
