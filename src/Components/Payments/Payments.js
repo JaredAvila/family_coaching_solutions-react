@@ -10,13 +10,14 @@ const Payments = () => {
         <div className={styles.PaymentInfo}>
           <p className={styles.Accepted}>I accept the following:</p>
           <ul>
-            <li>Credit Cards*</li>
+            <li>Cash</li>
             <li>Personal Checks</li>
             <li>Money Orders</li>
             <li>Cashiers Checks</li>
+            <li>Credit Cards</li>
           </ul>
           <p>
-            <em>*Credit Card Payments through PayPal</em>
+            <em>*Credit Card Payments through PayPal or Venmo</em>
           </p>
         </div>
         <div className={styles.Send}>

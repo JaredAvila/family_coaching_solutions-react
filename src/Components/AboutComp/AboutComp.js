@@ -38,8 +38,8 @@ class AboutComp extends Component {
             <h4 className={classes.NameTitle}>I go by many names...</h4>
             <ul className={classes.NameList}>
               <li>Husband</li>
-              <li>Father</li>
-              <li>Grandfather</li>
+              <li>Padre (Pod)</li>
+              <li>Bumpa</li>
               <li>Coach</li>
               <Waypoint onEnter={this.onLeftEnterHandler}>
                 <li>Drummer</li>
@@ -60,7 +60,7 @@ class AboutComp extends Component {
               </li>
               <li>
                 <span>Pioneer Family Academy</span> --7th Grade Life Science
-                Teacher
+                Teacher/11th Grade Communication Teacher
               </li>
               <li>
                 <span>Santa Clara County Fatherhood Collaborative</span>{" "}
@@ -105,11 +105,11 @@ class AboutComp extends Component {
             <h4 className={classes.NameTitle}>A little bit of everything</h4>
             <p className={classes.Para}>
               I've been a grocery clerk, an independent distributor (bread route
-              driver), a program coordinator at an alcohol/drug rehabilitation
-              facility ... but I found my passion over ten years ago when I
-              started working with men and fathers. I met a man named Vance
-              Simms, who really changed my direction in life. He's the Founder
-              of Father Matters (
+              driver), a program coordinator/director at an alcohol/drug
+              rehabilitation facility ... but I found my passion over twenty
+              years ago when I started working with men and fathers. I met a man
+              named Vance Simms, who really changed my direction in life. He's
+              the Founder of Father Matters (
               <a
                 href="www.fathermatters.org"
                 target="_blank"

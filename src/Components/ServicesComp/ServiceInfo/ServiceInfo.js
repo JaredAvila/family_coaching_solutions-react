@@ -69,12 +69,17 @@ class ServiceInfo extends Component {
           <div className={this.state.feesClasses.join(" ")}>
             <h3>Rates/Fees</h3>
             <ul className={styles.Rates}>
-              <li>1 hour - $105</li>
+              <li>1 hour - $125</li>
               <li>2 hours - $180</li>
               <li>3 hours - $250</li>
-              <li>4 hours - $300</li>
+              <li>4 hours - $375</li>
             </ul>
             <p className={styles.Para}>
+              <em>
+                *** I'm happy to discuss a sliding scale/payment plan in advance
+                of your first session.
+              </em>
+              <br />
               <em>
                 *** The multiple hourly rates are payable per month in advace,
                 or at the beginning of the first session
