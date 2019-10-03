@@ -28,13 +28,16 @@ const Footer = () => {
               <Link to="/services">Services</Link>
             </li>
             <li>
-              <Link to="/">Resources</Link>
+              <a
+                href="https://www.jaredavila.com/staging-site"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Blog
+              </a>
             </li>
             <li>
-              <Link to="/">Blog</Link>
-            </li>
-            <li>
-              <Link to="/">Contract</Link>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>

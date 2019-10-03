@@ -38,6 +38,7 @@
 @media (max-width: 500px) {
     .Heading {
         font-size: 2.4rem;
+        text-align: center;
     }
     .Services {
         padding: 10rem .5rem 5rem .5rem;

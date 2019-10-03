@@ -55,7 +55,9 @@ class Navbar extends Component {
               <NavItem link="/">Home</NavItem>
               <NavItem link="/about">About</NavItem>
               <NavItem link="/services">Services</NavItem>
-              <NavItem link="/about">Blog</NavItem>
+              <NavItem outside link="https://www.jaredavila.com/staging-site">
+                Blog
+              </NavItem>
               <NavItem link="/contact">Contact</NavItem>
             </ul>
           </div>

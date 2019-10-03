@@ -10,7 +10,6 @@ class CTA extends Component {
     btnClasses: [classes.Button]
   };
   onEnderHandler = () => {
-    console.log("button in view");
     this.setState({
       btnClasses: [classes.Button, animate.BtnShake]
     });
@@ -21,7 +20,7 @@ class CTA extends Component {
         <h2 className={classes.Schedule}>
           Schedule your FREE twenty minute phone session today!
         </h2>
-        <Link to="/" className={this.state.btnClasses.join(" ")}>
+        <Link to="/contact" className={this.state.btnClasses.join(" ")}>
           Contact{" "}
           <Waypoint onEnter={this.onEnderHandler}>
             <span className={classes.Arrow}>

@@ -14,19 +14,19 @@ class Services extends Component {
         title: "Counseling/Life Coaching",
         icon: "accessibility_new",
         paragraph:
-          "I can assist you in bringing out the best YOU... through compassion, awareness, encouragement and support. If you're going through rough times, you need to understand how it affects your children. There are ways to handle this while keeping your children's best interests at heart. I can help you develop a Co-Parenting Plan that will work for you."
+          "With compassion, awareness, encouragement and support, I can assist you in becoming the best YOU possible!  We all get stuck, lose focus, or lack direction and motivation at times...don’t hesitate to reach out and take that first step on the road to improvement.  Going through difficult times is a part of life...if you need help, it’s available. Do the best thing you can for yourself and your family...seek help from someone with your best interests in mind."
       },
       {
         title: "Parenting Clashes",
         icon: "offline_bolt",
         paragraph:
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam amet dolorem officiis ea pariatur. Asperiores delectus quae maxime excepturi id eius sed quidem, consequuntur tempore ipsum cum deleniti mollitia quo quas modi quibusdam ipsam voluptates. Aspernatur molestiae laudantium vitae repellendus, rem est et, ipsam suscipit accusantium numquam unde nostrum dolores."
+          "Parenting can be one of the most difficult “jobs” a person will ever have.  Successful co-parenting can ease some of the pressure and even lower the stress involved with raising children.  Whether you’re single, married, or partnered, developing an effective plan that will keep your child’s best interests at heart, as well as yours, is key to laying a positive foundation that will benefit all involved for years to come.  Everyone has disagreements, different opinions, etc., so dealing with these “clashes” is necessary to keep everyone healthy and happy."
       },
       {
         title: "Mentoring",
         icon: "supervisor_account",
         paragraph:
-          " Most of my work with Father Matters, an organization committed to building stronger and healthier communities by supporting, encouraging, and enlightening today’s fathers and families, has involved mentoring other men and fathers. Let's deal with the issues holding you back!"
+          "I’ve spent years working with Father Matters, an organization committed to building stronger and healthier communities.  Through supporting, encouraging, and enlightening today’s fathers and families, we can move forward and create a more positive future for ourselves and our children.  Let’s deal with whatever issues are holding you back!"
       }
     ]
   };

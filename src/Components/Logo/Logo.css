@@ -2,8 +2,24 @@
     margin: 1.5rem;
 }
 
+.Logo {
+    position: relative;
+}
+
+.Logo h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+    color: rgb(80, 80, 80);
+}
+
 @media(max-width: 500px) {
     .Logo img {
         margin: 1rem;
+    }
+    .Logo h4 {
+        font-size: 1.4rem;
     }
 }

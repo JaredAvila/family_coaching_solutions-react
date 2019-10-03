@@ -7,6 +7,7 @@ const Logo = () => {
   return (
     <div className={classes.Logo}>
       <img src={logo} alt="Family Coaching Solutions" />
+      <h4>Menu</h4>
     </div>
   );
 };

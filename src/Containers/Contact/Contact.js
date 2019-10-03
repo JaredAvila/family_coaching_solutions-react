@@ -50,17 +50,17 @@ const Contact = () => {
         </div>
         <div className={styles.Right}>
           <div className={styles.Social}>
-            <a href="#">
-              <i class="fab fa-facebook-square" /> facebook
+            <a href="/">
+              <i className="fab fa-facebook-square" /> facebook
             </a>
-            <a href="#">
-              <i class="fab fa-linkedin" /> linkedin
+            <a href="/">
+              <i className="fab fa-linkedin" /> linkedin
             </a>
-            <a href="#">
-              <i class="fab fa-youtube-square" /> youtube
+            <a href="/">
+              <i className="fab fa-youtube-square" /> youtube
             </a>
-            <a href="#">
-              <i class="fas fa-envelope" /> email
+            <a href="/">
+              <i className="fas fa-envelope" /> email
             </a>
           </div>
           <hr />

@@ -69,10 +69,8 @@ class ServiceInfo extends Component {
           <div className={this.state.feesClasses.join(" ")}>
             <h3>Rates/Fees</h3>
             <ul className={styles.Rates}>
-              <li>1 hour - $125</li>
-              <li>2 hours - $180</li>
-              <li>3 hours - $250</li>
-              <li>4 hours - $375</li>
+              <li>$125 - 1 Hour</li>
+              <li>$375 - 4 hours</li>
             </ul>
             <p className={styles.Para}>
               <em>
