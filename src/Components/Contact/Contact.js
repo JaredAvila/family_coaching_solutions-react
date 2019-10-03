@@ -18,7 +18,11 @@ class Contact extends Component {
   render() {
     return (
       <div className={this.state.contactClasses.join(" ")}>
-        <form className={classes.Form}>
+        <form
+          className={classes.Form}
+          action="https://formspree.io/jared.c.avila@gmail.com"
+          method="POST"
+        >
           <Waypoint onEnter={this.contactEntered}>
             <h3 className={classes.Title}>Let's talk</h3>
           </Waypoint>
@@ -60,7 +64,7 @@ class Contact extends Component {
               Message
             </label>
           </div>
-          <button className={classes.Button} type="button">
+          <button className={classes.Button} type="submit">
             Connect <i className="material-icons">send</i>
           </button>
         </form>

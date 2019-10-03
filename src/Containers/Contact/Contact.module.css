@@ -76,7 +76,7 @@
     flex-flow: column;
 }
 
-.Left input, .Left textarea, .Left button {
+.Left input, .Left textarea, .SubmitBtn {
     padding: 1rem;
     border-radius: 4px;
     border: 1px solid rgba(48, 48, 48, 0.6);
@@ -86,7 +86,7 @@
     font-size: 1.6rem;
 }
 
-.Left button {
+.SubmitBtn {
     cursor: pointer;
     width: fit-content;
     align-self: flex-end;
@@ -94,7 +94,7 @@
     transition: all 250ms ease;
 }
 
-.Left button:hover {
+.SubmitBtn:hover {
     background-color: #22888b;
 }
 

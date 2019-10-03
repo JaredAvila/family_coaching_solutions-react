@@ -36,7 +36,10 @@ const Contact = () => {
           </p>
           <h6>Contact me today!</h6>
           <h6>Your information</h6>
-          <form>
+          <form
+            action="https://formspree.io/jared.c.avila@gmail.com"
+            method="POST"
+          >
             <input type="text" name="name" placeholder="Your name" />
             <input type="email" name="email" placeholder="Email address" />
             <textarea
@@ -45,7 +48,7 @@ const Contact = () => {
               rows="10"
               placeholder="Message"
             />
-            <button>Submit</button>
+            <input className={styles.SubmitBtn} type="submit" value="Submit" />
           </form>
         </div>
         <div className={styles.Right}>
