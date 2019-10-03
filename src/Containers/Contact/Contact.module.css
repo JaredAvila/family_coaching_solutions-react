@@ -8,26 +8,23 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 70vh;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .Header h1 {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-65%, -50%);
     font-size: 4.3rem;
     letter-spacing: .8rem;
     color: #ebebeb;
+    margin-bottom: 50px;
 }
 
 .Header p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 2rem;
     font-weight: 200;
+    width: 700px;
     color: #ebebeb;
     line-height: 3.3rem;
 }
@@ -149,14 +146,59 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: #22888b;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .End p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 3rem;
+    text-align: center;
     color: #f3de58;
+    width: 80%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .Left, .Right {
+        width: 45%;
+        padding: 3rem;
+    }
+    .End p {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 705px) {
+    .Header h1 {
+        font-size: 3.3rem;
+    }
+    .Header p {
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+        width: 450px;
+    }
+    .End p {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .Header h1 {
+        font-size: 3rem;
+    }
+    .Header p {
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+        width: 300px;
+    }
+    .Left, .Right {
+        width: 100%;
+        padding: 5rem;
+    }
+    .Left h1 {
+        font-size: 2.4rem;
+    }
+    .End p {
+        width: 90%;
+    }
 }
