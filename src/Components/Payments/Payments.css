@@ -44,3 +44,11 @@
     font-size: 2.7rem !important;
     color: #22888b;
 }
+
+.Logos {
+    margin-top: 20px;
+}
+
+.Logos img {
+    height: 70px;
+}

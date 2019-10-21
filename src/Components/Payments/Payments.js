@@ -1,5 +1,8 @@
 import React from "react";
 
+import PayPal from "../../assets/images/paypal.png";
+import Venmo from "../../assets/images/venmo.png";
+
 import styles from "./Payments.css";
 
 const Payments = () => {
@@ -12,13 +15,8 @@ const Payments = () => {
           <ul>
             <li>Cash</li>
             <li>Personal Checks</li>
-            <li>Money Orders</li>
-            <li>Cashiers Checks</li>
-            <li>Credit Cards</li>
+            <li>Credit Cards*</li>
           </ul>
-          <p>
-            <em>*Credit Card Payments through PayPal or Venmo</em>
-          </p>
         </div>
         <div className={styles.Send}>
           <p className={styles.Accepted}>Please send payments to:</p>
@@ -32,8 +30,13 @@ const Payments = () => {
           <p>(408)449-3057</p>
         </div>
       </div>
-      <h1 className={styles.Make}>Make a payment now</h1>
-      <button>PayPal Button</button>
+      <div className={styles.Logos}>
+        <img src={PayPal} alt="paypal payments accepted" />
+        <img src={Venmo} alt="venmo payments accepted" />
+      </div>
+      <p>
+        <em>*Credit Card payments accepted via PayPal or Venmo</em>
+      </p>
     </div>
   );
 };

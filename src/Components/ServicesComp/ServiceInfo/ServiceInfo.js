@@ -42,13 +42,13 @@ class ServiceInfo extends Component {
               <Waypoint onEnter={this.codeEnter}>
                 <li>
                   I will not misrepresent myself, nor my qualifications,
-                  expertise, or experience as a Christian Life Coach.
+                  expertise, or experience as a Christian Life Coach/Counselor.
                 </li>
               </Waypoint>
 
               <li>
                 I will be compassionate, graceful, and nonjudgmental to all who
-                are seeking Christian Coaching.
+                are seeking Christian Coaching/Counseling.
               </li>
               <li>
                 I will respect people in their own faith journey, and will not

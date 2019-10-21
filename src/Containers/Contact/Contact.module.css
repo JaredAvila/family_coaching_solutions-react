@@ -50,10 +50,12 @@
 
 .Left h2 {
     font-size: 1.8rem;
-    padding-bottom: 2rem;
+    padding: 0 0 0 12px;
+    margin-bottom: 20px;
     font-weight: 600;
-    color: #f3de58;
-    text-shadow: 0rem 0rem .3rem #383836;
+    color: #4b4b4b;
+    border-left: 5px solid rgb(236, 220, 69);
+    /* text-shadow: 0rem 0rem .2rem #383836; */
 }
 
 .Left p {
@@ -106,12 +108,15 @@
 .Social {
     display: flex;
     flex-flow: column;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
 }
 
 .Social a {
     text-decoration: none;
+    display: flex;
+    text-transform: capitalize;
+    align-items: center;
     font: inherit;
     color: #22888b;
     padding: 1rem 0;
@@ -120,6 +125,11 @@
 
 .Social a:hover {
     color: #68c7c6;
+}
+
+.Icon {
+    font-size: 4rem;
+    margin-right: 5px;
 }
 
 .Office {

@@ -23,10 +23,11 @@ class Connect extends Component {
           <Waypoint onEnter={this.onEnterHandler}>
             <p className={classes.Para}>
               Family Coaching Solutions is here to help with many types of
-              issues that exist within the faimly unit. Let's work together to
+              issues that exist within the family unit. Let's work together to
               find solutions and allow me to coach you to a more peaceful and
-              balanced family dynamic. I specialize in Co-Parent counseling and
-              coaching, as well as Conflict Resolution. <br />
+              balanced family dynamic. I specialize in Co-Parent counseling,
+              conflict resolution, drug and alcohol adiction and digital media
+              issues. <br />
               <br />
               Connect with me today to schedule your free 20-minute phone
               session.

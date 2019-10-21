@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import * as styles from "./Contact.module.css";
 
@@ -53,17 +56,13 @@ const Contact = () => {
         </div>
         <div className={styles.Right}>
           <div className={styles.Social}>
-            <a href="/">
-              <i className="fab fa-facebook-square" /> facebook
+            <a href="https://www.facebook.com/Family-Coaching-Solutions-1074526972563404/">
+              <FontAwesomeIcon className={styles.Icon} icon={faFacebook} />{" "}
+              facebook
             </a>
-            <a href="/">
-              <i className="fab fa-linkedin" /> linkedin
-            </a>
-            <a href="/">
-              <i className="fab fa-youtube-square" /> youtube
-            </a>
-            <a href="/">
-              <i className="fas fa-envelope" /> email
+            <a href="https://www.linkedin.com/in/jay-harnden-7760831a/">
+              <FontAwesomeIcon className={styles.Icon} icon={faLinkedin} />{" "}
+              linkedIn
             </a>
           </div>
           <hr />
