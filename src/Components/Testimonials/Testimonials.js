@@ -4,6 +4,7 @@ import * as styles from "./Testimonilas.module.css";
 
 class Testimonials extends Component {
   state = {
+    currentSlide: 0,
     testimonials: [
       {
         text:
@@ -22,13 +23,35 @@ class Testimonials extends Component {
       }
     ]
   };
+
+  testSlider = null;
+
+  componentDidMount = () => {
+    this.testSlider = setInterval(() => {
+      console.log("calling interval callback fxn");
+      this.switchSlide();
+    }, 5000);
+  };
+
+  componentWillUnmount = () => {
+    console.log("clearing interval fxn");
+    clearInterval(this.testSlider);
+  };
+
   switchSlide = () => {
-    setInterval();
+    if (this.state.currentSlide >= 2) {
+      this.setState({ currentSlide: 0 });
+    } else {
+      let curSlide = this.state.currentSlide;
+      curSlide++;
+      this.setState({ currentSlide: curSlide });
+    }
   };
   render() {
     return (
       <div className={styles.Testimonials}>
         <h1>Testimonials Slider!</h1>
+        <h1>{this.state.testimonials[this.state.currentSlide].text}</h1>
       </div>
     );
   }
