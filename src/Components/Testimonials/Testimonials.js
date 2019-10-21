@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 import * as styles from "./Testimonilas.module.css";
 
@@ -30,7 +32,7 @@ class Testimonials extends Component {
 
   componentDidMount = () => {
     this.testSlider = setInterval(() => {
-      this.switchSlide();
+      this.switchSlide(true);
     }, 7000);
   };
 
@@ -38,7 +40,22 @@ class Testimonials extends Component {
     clearInterval(this.testSlider);
   };
 
-  switchSlide = () => {
+  switchSlide = auto => {
+    this.onForwardClickHandler(auto);
+  };
+
+  onBackClickHandler = () => {
+    if (this.state.currentSlide <= 0) {
+      this.setState({ currentSlide: 2 });
+    } else {
+      let curSlide = this.state.currentSlide;
+      curSlide--;
+      this.setState({ currentSlide: curSlide });
+    }
+    clearInterval(this.testSlider);
+  };
+
+  onForwardClickHandler = auto => {
     if (this.state.currentSlide >= 2) {
       this.setState({ currentSlide: 0 });
     } else {
@@ -46,16 +63,32 @@ class Testimonials extends Component {
       curSlide++;
       this.setState({ currentSlide: curSlide });
     }
+    if (!auto) {
+      clearInterval(this.testSlider);
+    }
   };
+
   render() {
     return (
       <div className={styles.Testimonials}>
-        <div className={styles.Testimonial}>
-          <FontAwesomeIcon className={styles.Icon} icon={faQuoteLeft} />
-          <div>
-            <p>{this.state.testimonials[this.state.currentSlide].text}</p>
-            <h6>-{this.state.testimonials[this.state.currentSlide].name}</h6>
+        <div className={styles.Wrapper}>
+          <FontAwesomeIcon
+            icon={faChevronLeft}
+            onClick={this.onBackClickHandler}
+            className={styles.ChevBtn}
+          />
+          <div className={styles.Testimonial}>
+            <FontAwesomeIcon className={styles.Icon} icon={faQuoteLeft} />
+            <div>
+              <p>{this.state.testimonials[this.state.currentSlide].text}</p>
+              <h6>-{this.state.testimonials[this.state.currentSlide].name}</h6>
+            </div>
           </div>
+          <FontAwesomeIcon
+            onClick={() => this.onForwardClickHandler(false)}
+            icon={faChevronRight}
+            className={styles.ChevBtn}
+          />
         </div>
       </div>
     );

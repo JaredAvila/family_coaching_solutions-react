@@ -3,6 +3,15 @@
     padding: 70px 0 20px 0;
     height: 370px;
     background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+}
+
+.Wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
 }
 
 .Testimonial {
@@ -30,4 +39,10 @@
     color: #22878b4d;
     font-size: 4rem;
     margin-right: 5px;
+}
+
+.ChevBtn {
+    cursor: pointer;
+    color: #22878b80;
+    font-size: 6rem;
 }
