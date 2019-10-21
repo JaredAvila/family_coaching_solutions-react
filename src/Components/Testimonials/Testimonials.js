@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 
 import * as styles from "./Testimonilas.module.css";
 
@@ -28,13 +30,11 @@ class Testimonials extends Component {
 
   componentDidMount = () => {
     this.testSlider = setInterval(() => {
-      console.log("calling interval callback fxn");
       this.switchSlide();
-    }, 5000);
+    }, 7000);
   };
 
   componentWillUnmount = () => {
-    console.log("clearing interval fxn");
     clearInterval(this.testSlider);
   };
 
@@ -50,8 +50,13 @@ class Testimonials extends Component {
   render() {
     return (
       <div className={styles.Testimonials}>
-        <h1>Testimonials Slider!</h1>
-        <h1>{this.state.testimonials[this.state.currentSlide].text}</h1>
+        <div className={styles.Testimonial}>
+          <FontAwesomeIcon className={styles.Icon} icon={faQuoteLeft} />
+          <div>
+            <p>{this.state.testimonials[this.state.currentSlide].text}</p>
+            <h6>-{this.state.testimonials[this.state.currentSlide].name}</h6>
+          </div>
+        </div>
       </div>
     );
   }
