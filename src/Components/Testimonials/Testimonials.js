@@ -136,21 +136,15 @@ class Testimonials extends Component {
           </div>
         </div>
         <div className={styles.Controls}>
-          <button
-            data-num={0}
-            onClick={this.updateSelectedHandler}
-            className={this.state.buttonConfig[0].classes.join(" ")}
-          ></button>
-          <button
-            data-num={1}
-            onClick={this.updateSelectedHandler}
-            className={this.state.buttonConfig[1].classes.join(" ")}
-          ></button>
-          <button
-            data-num={2}
-            onClick={this.updateSelectedHandler}
-            className={this.state.buttonConfig[2].classes.join(" ")}
-          ></button>
+          {this.state.buttonConfig.map((button, i) => {
+            return (
+              <button
+                data-num={i}
+                onClick={this.updateSelectedHandler}
+                className={button.classes.join(" ")}
+              ></button>
+            );
+          })}
         </div>
       </Fragment>
     );
