@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
@@ -9,6 +9,11 @@ import * as styles from "./Testimonilas.module.css";
 class Testimonials extends Component {
   state = {
     currentSlide: 0,
+    buttonConfig: [
+      { classes: [styles.SelectBtn, styles.Selected] },
+      { classes: [styles.SelectBtn] },
+      { classes: [styles.SelectBtn] }
+    ],
     testimonials: [
       {
         text:
@@ -45,52 +50,107 @@ class Testimonials extends Component {
   };
 
   onBackClickHandler = () => {
+    let newButtonConfig = [
+      { classes: [styles.SelectBtn] },
+      { classes: [styles.SelectBtn] },
+      { classes: [styles.SelectBtn] }
+    ];
     if (this.state.currentSlide <= 0) {
-      this.setState({ currentSlide: 2 });
+      newButtonConfig[2] = { classes: [styles.SelectBtn, styles.Selected] };
+      this.setState({ currentSlide: 2, buttonConfig: newButtonConfig });
     } else {
       let curSlide = this.state.currentSlide;
       curSlide--;
-      this.setState({ currentSlide: curSlide });
+      newButtonConfig[curSlide] = {
+        classes: [styles.SelectBtn, styles.Selected]
+      };
+      this.setState({ currentSlide: curSlide, buttonConfig: newButtonConfig });
     }
     clearInterval(this.testSlider);
   };
 
   onForwardClickHandler = auto => {
+    let newButtonConfig = [
+      { classes: [styles.SelectBtn] },
+      { classes: [styles.SelectBtn] },
+      { classes: [styles.SelectBtn] }
+    ];
     if (this.state.currentSlide >= 2) {
-      this.setState({ currentSlide: 0 });
+      newButtonConfig[0] = { classes: [styles.SelectBtn, styles.Selected] };
+      this.setState({ currentSlide: 0, buttonConfig: newButtonConfig });
     } else {
       let curSlide = this.state.currentSlide;
       curSlide++;
-      this.setState({ currentSlide: curSlide });
+      newButtonConfig[curSlide] = {
+        classes: [styles.SelectBtn, styles.Selected]
+      };
+      this.setState({ currentSlide: curSlide, buttonConfig: newButtonConfig });
     }
     if (!auto) {
       clearInterval(this.testSlider);
     }
   };
 
+  updateSelectedHandler = e => {
+    let newButtonConfig = [
+      { classes: [styles.SelectBtn] },
+      { classes: [styles.SelectBtn] },
+      { classes: [styles.SelectBtn] }
+    ];
+    newButtonConfig[e.target.dataset["num"]] = {
+      classes: [styles.SelectBtn, styles.Selected]
+    };
+    this.setState({
+      currentSlide: e.target.dataset["num"],
+      buttonConfig: newButtonConfig
+    });
+    clearInterval(this.testSlider);
+  };
+
   render() {
     return (
-      <div className={styles.Testimonials}>
-        <div className={styles.Wrapper}>
-          <FontAwesomeIcon
-            icon={faChevronLeft}
-            onClick={this.onBackClickHandler}
-            className={styles.ChevBtn}
-          />
-          <div className={styles.Testimonial}>
-            <FontAwesomeIcon className={styles.Icon} icon={faQuoteLeft} />
-            <div>
-              <p>{this.state.testimonials[this.state.currentSlide].text}</p>
-              <h6>-{this.state.testimonials[this.state.currentSlide].name}</h6>
+      <Fragment>
+        <div className={styles.Testimonials}>
+          <div className={styles.Wrapper}>
+            <FontAwesomeIcon
+              icon={faChevronLeft}
+              onClick={this.onBackClickHandler}
+              className={styles.ChevBtn}
+            />
+            <div className={styles.Testimonial}>
+              <FontAwesomeIcon className={styles.Icon} icon={faQuoteLeft} />
+              <div>
+                <p>{this.state.testimonials[this.state.currentSlide].text}</p>
+                <h6>
+                  -{this.state.testimonials[this.state.currentSlide].name}
+                </h6>
+              </div>
             </div>
+            <FontAwesomeIcon
+              onClick={() => this.onForwardClickHandler(false)}
+              icon={faChevronRight}
+              className={styles.ChevBtn}
+            />
           </div>
-          <FontAwesomeIcon
-            onClick={() => this.onForwardClickHandler(false)}
-            icon={faChevronRight}
-            className={styles.ChevBtn}
-          />
         </div>
-      </div>
+        <div className={styles.Controls}>
+          <button
+            data-num={0}
+            onClick={this.updateSelectedHandler}
+            className={this.state.buttonConfig[0].classes.join(" ")}
+          ></button>
+          <button
+            data-num={1}
+            onClick={this.updateSelectedHandler}
+            className={this.state.buttonConfig[1].classes.join(" ")}
+          ></button>
+          <button
+            data-num={2}
+            onClick={this.updateSelectedHandler}
+            className={this.state.buttonConfig[2].classes.join(" ")}
+          ></button>
+        </div>
+      </Fragment>
     );
   }
 }
