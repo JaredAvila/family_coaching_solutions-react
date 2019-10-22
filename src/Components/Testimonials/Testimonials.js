@@ -33,78 +33,80 @@ class Testimonials extends Component {
     ]
   };
 
+  // variable to hold the setInterval function
   testSlider = null;
 
+  //starts the slider with setInterval
   componentDidMount = () => {
     this.testSlider = setInterval(() => {
       this.switchSlide(true);
     }, 7000);
   };
 
+  // clearInterval upon unmounting
   componentWillUnmount = () => {
     clearInterval(this.testSlider);
   };
 
+  // increments testimonial slider without clearInterval
   switchSlide = auto => {
     this.onForwardClickHandler(auto);
   };
 
+  // decrements testimonial slider and runs clearInterval
   onBackClickHandler = () => {
-    let newButtonConfig = [
-      { classes: [styles.SelectBtn] },
-      { classes: [styles.SelectBtn] },
-      { classes: [styles.SelectBtn] }
-    ];
-    if (this.state.currentSlide <= 0) {
-      newButtonConfig[2] = { classes: [styles.SelectBtn, styles.Selected] };
-      this.setState({ currentSlide: 2, buttonConfig: newButtonConfig });
-    } else {
-      let curSlide = this.state.currentSlide;
-      curSlide--;
-      newButtonConfig[curSlide] = {
-        classes: [styles.SelectBtn, styles.Selected]
-      };
-      this.setState({ currentSlide: curSlide, buttonConfig: newButtonConfig });
-    }
+    this.updateSlideCount("backward");
     clearInterval(this.testSlider);
   };
 
+  // increments testimonial slider and runs clearInterval
   onForwardClickHandler = auto => {
-    let newButtonConfig = [
-      { classes: [styles.SelectBtn] },
-      { classes: [styles.SelectBtn] },
-      { classes: [styles.SelectBtn] }
-    ];
-    if (this.state.currentSlide >= 2) {
-      newButtonConfig[0] = { classes: [styles.SelectBtn, styles.Selected] };
-      this.setState({ currentSlide: 0, buttonConfig: newButtonConfig });
-    } else {
-      let curSlide = this.state.currentSlide;
-      curSlide++;
-      newButtonConfig[curSlide] = {
-        classes: [styles.SelectBtn, styles.Selected]
-      };
-      this.setState({ currentSlide: curSlide, buttonConfig: newButtonConfig });
-    }
+    this.updateSlideCount("forward");
     if (!auto) {
       clearInterval(this.testSlider);
     }
   };
 
+  // updates testimonial slider based on which button is clicked
   updateSelectedHandler = e => {
+    this.updateClassesAndSlide(e.target.dataset["num"]);
+    clearInterval(this.testSlider);
+  };
+
+  // handles button class update and testimonial slide update
+  updateClassesAndSlide = num => {
     let newButtonConfig = [
       { classes: [styles.SelectBtn] },
       { classes: [styles.SelectBtn] },
       { classes: [styles.SelectBtn] }
     ];
-    newButtonConfig[e.target.dataset["num"]] = {
+    newButtonConfig[num] = {
       classes: [styles.SelectBtn, styles.Selected]
     };
     this.setState({
-      currentSlide: e.target.dataset["num"],
+      currentSlide: num,
       buttonConfig: newButtonConfig
     });
-    clearInterval(this.testSlider);
+  };
+
+  // based on direction handles logic for slider
+  updateSlideCount = direction => {
+    let curSlide = this.state.currentSlide;
+    if (direction === "forward") {
+      if (curSlide >= 2) {
+        this.updateClassesAndSlide(0);
+      } else {
+        curSlide++;
+        this.updateClassesAndSlide(curSlide);
+      }
+    } else {
+      if (curSlide <= 0) {
+        this.updateClassesAndSlide(2);
+      } else {
+        curSlide--;
+        this.updateClassesAndSlide(curSlide);
+      }
+    }
   };
 
   render() {
