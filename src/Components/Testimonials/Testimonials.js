@@ -139,6 +139,7 @@ class Testimonials extends Component {
           {this.state.buttonConfig.map((button, i) => {
             return (
               <button
+                key={i}
                 data-num={i}
                 onClick={this.updateSelectedHandler}
                 className={button.classes.join(" ")}

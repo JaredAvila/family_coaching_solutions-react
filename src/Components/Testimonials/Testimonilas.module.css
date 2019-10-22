@@ -70,3 +70,40 @@
 .SelectBtn.Selected {
     background-color: #1d6a6dd3;
 }
+
+@media(max-width: 950px) {
+    .Testimonials {
+        height: 300px;
+    }
+    .Wrapper {
+        width: 100%;
+    }
+    .Testimonial {
+        padding: 10px;
+        font-size: 1.2rem;
+        margin: auto;
+        width: 600px;
+    }
+    .ChevBtn {
+        font-size: 4rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .Testimonials {
+        height: 470px;
+    }
+    .Wrapper {
+        width: 100%;
+    }
+    .Icon {
+        display: none;
+    }
+    .Testimonial {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+    .ChevBtn {
+        font-size: 4rem;
+    }
+}
