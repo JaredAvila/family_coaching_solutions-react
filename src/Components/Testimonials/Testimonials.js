@@ -35,7 +35,7 @@ class Testimonials extends Component {
       },
       {
         text:
-          "Do you have a child at home who taps out drum beats on the kitchen table and around the house?  We have one! Jay was our son’s 7th grade science teacher at Pioneer Family Academy.  In the beginning of school, Jay mentioned that he taught drums – and we jumped at the opportunity to have our son take lessons and try them out. Jay is an excellent drum teacher!  I highly recommend him.  He knows how to help students learn to play by feel and consistent practice of drum rudiments, songs, and exercises.  Song learning was done through careful listening and breaking down pieces of the song.  Jay has his studio set up with drum kits facing each other.  My son would watch him play and then play it back.  My son enjoyed drum lessons and Jay kept him motivated with a variety of things to work on, fun beats, and watching youtube clips of different drummers. It has been a great thrill to watch and hear our son play drums over the past several years!  My wife and I always enjoy seeing him play in different bands and worship teams.  He loves to play the drums and I thank Jay for teaching him and encouraging him during his early days of playing in church youth group.  Jay is also a very personable guy and I am thankful to have gotten to know him over the years and I consider him a good friend.",
+          "Jay is an excellent drum teacher!  I highly recommend him.  He knows how to help students learn to play by feel and consistent practice of drum rudiments, songs, and exercises.  Song learning was done through careful listening and breaking down pieces of the song.  Jay has his studio set up with drum kits facing each other.  My son would watch him play and then play it back.  My son enjoyed drum lessons and Jay kept him motivated with a variety of things to work on, fun beats, and watching youtube clips of different drummers. It has been a great thrill to watch and hear our son play drums over the past several years!  My wife and I always enjoy seeing him play in different bands and worship teams.  He loves to play the drums and I thank Jay for teaching him and encouraging him during his early days of playing in church youth group.  Jay is also a very personable guy and I am thankful to have gotten to know him over the years and I consider him a good friend.",
         name: "Phil R."
       },
       {
@@ -58,7 +58,7 @@ class Testimonials extends Component {
   componentDidMount = () => {
     this.testSlider = setInterval(() => {
       this.switchSlide(true);
-    }, 7000);
+    }, 10000);
   };
 
   // clearInterval upon unmounting

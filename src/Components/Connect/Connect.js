@@ -26,7 +26,7 @@ class Connect extends Component {
               issues that exist within the family unit. Let's work together to
               find solutions and allow me to coach you to a more peaceful and
               balanced family dynamic. I specialize in Co-Parent counseling,
-              conflict resolution, drug and alcohol adiction and digital media
+              conflict resolution, drug and alcohol addiction and digital media
               issues. <br />
               <br />
               Connect with me today to schedule your free 20-minute phone
