@@ -17,6 +17,7 @@ class Navbar extends Component {
       open: true
     });
   };
+
   menuClosedHandler = () => {
     this.setState({
       open: false
@@ -24,8 +25,9 @@ class Navbar extends Component {
   };
 
   toggleMenu = () => {
-    this.setState({
-      open: !this.state.open
+    this.setState((prevState, nextState) => {
+      const open = prevState["open"];
+      return { open };
     });
   };
 
