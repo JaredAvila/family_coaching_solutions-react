@@ -1,7 +1,7 @@
 .Testimonials {
     color: rgb(41, 41, 41);
     padding: 70px 0 20px 0;
-    height: 400px;
+    height: 560px;
     background-color: #eaeaea;
     display: flex;
     flex-direction: column;
@@ -72,9 +72,6 @@
 }
 
 @media(max-width: 950px) {
-    .Testimonials {
-        height: 300px;
-    }
     .Wrapper {
         width: 100%;
     }
@@ -91,7 +88,7 @@
 
 @media(max-width: 500px) {
     .Testimonials {
-        height: 470px;
+        height: 720px;
     }
     .Wrapper {
         width: 100%;

@@ -25,7 +25,7 @@ class Navbar extends Component {
   };
 
   toggleMenu = () => {
-    this.setState((prevState, nextState) => {
+    this.setState(prevState => {
       const open = prevState["open"];
       return { open };
     });

@@ -12,6 +12,9 @@ class Testimonials extends Component {
     buttonConfig: [
       { classes: [styles.SelectBtn, styles.Selected] },
       { classes: [styles.SelectBtn] },
+      { classes: [styles.SelectBtn] },
+      { classes: [styles.SelectBtn] },
+      { classes: [styles.SelectBtn] },
       { classes: [styles.SelectBtn] }
     ],
     testimonials: [
@@ -27,8 +30,23 @@ class Testimonials extends Component {
       },
       {
         text:
-          "I am very thankful for Jay’s coaching and advice.  He speaks from life experience and applies Biblical truths.  I have gone to see Jay to help me work through a period in my life where I had a child making poor choices and I needed help with how to work through this.  I have also seen Jay when I was dealing with a time of fear and anxiety.  It was very helpful to talk to him.  I left our sessions with a plan that gave me peace that I could do something positive about the situation and not be stuck in the worry and fear.  Thanks Jay!",
+          "I am very thankful for Jay’s coaching and advice.  He speaks from life experience and applies Biblical truths.  I have gone to see Jay for help with parenting and have also seen him when I was dealing with a time of fear and anxiety.  It was very helpful to talk to him.  I left our sessions with a plan that gave me peace that I could do something positive about the situation and not be stuck in the worry and fear.  Thanks Jay!",
+        name: "Jon D."
+      },
+      {
+        text:
+          "Do you have a child at home who taps out drum beats on the kitchen table and around the house?  We have one! Jay was our son’s 7th grade science teacher at Pioneer Family Academy.  In the beginning of school, Jay mentioned that he taught drums – and we jumped at the opportunity to have our son take lessons and try them out. Jay is an excellent drum teacher!  I highly recommend him.  He knows how to help students learn to play by feel and consistent practice of drum rudiments, songs, and exercises.  Song learning was done through careful listening and breaking down pieces of the song.  Jay has his studio set up with drum kits facing each other.  My son would watch him play and then play it back.  My son enjoyed drum lessons and Jay kept him motivated with a variety of things to work on, fun beats, and watching youtube clips of different drummers. It has been a great thrill to watch and hear our son play drums over the past several years!  My wife and I always enjoy seeing him play in different bands and worship teams.  He loves to play the drums and I thank Jay for teaching him and encouraging him during his early days of playing in church youth group.  Jay is also a very personable guy and I am thankful to have gotten to know him over the years and I consider him a good friend.",
         name: "Phil R."
+      },
+      {
+        text:
+          "We would recommend taking drum lessons with Jay to anyone who wants to learn, no matter your level of experience!  Our son had never played before and has now been studying with Jay for over 4 years.  He has learned so much during that time, and it's such a blessing to see how much he enjoys playing.  Jay has a way of making each lesson fun, and he engages his students by allowing them to bring in music that interests them. and every lesson!  And that's why when our son was struggling with some anxiety issues we didn't hesitate to ask Jay to have a counseling session with him, and his insights and help he had for our son and for us as parents continues to be a blessing to us today.",
+        name: "Andrea M."
+      },
+      {
+        text:
+          'While going through my divorce, my attorney suggested I contact Jay.  I\'m really glad I did, as he helped me develop a perspective that has allowed me to actually become friendly with my ex, which has been really beneficial not only to me, but to my kids as well.  Our co-parenting is working out really well, and I go see Jay every once in a while for a "tune-up" which helps me stay on track.',
+        name: "Randy L."
       }
     ]
   };
@@ -78,6 +96,9 @@ class Testimonials extends Component {
     let newButtonConfig = [
       { classes: [styles.SelectBtn] },
       { classes: [styles.SelectBtn] },
+      { classes: [styles.SelectBtn] },
+      { classes: [styles.SelectBtn] },
+      { classes: [styles.SelectBtn] },
       { classes: [styles.SelectBtn] }
     ];
     newButtonConfig[num] = {
@@ -93,7 +114,7 @@ class Testimonials extends Component {
   updateSlideCount = direction => {
     let curSlide = this.state.currentSlide;
     if (direction === "forward") {
-      if (curSlide >= 2) {
+      if (curSlide >= this.state.testimonials.length - 1) {
         this.updateClassesAndSlide(0);
       } else {
         curSlide++;
@@ -101,7 +122,7 @@ class Testimonials extends Component {
       }
     } else {
       if (curSlide <= 0) {
-        this.updateClassesAndSlide(2);
+        this.updateClassesAndSlide(this.state.testimonials.length - 1);
       } else {
         curSlide--;
         this.updateClassesAndSlide(curSlide);
